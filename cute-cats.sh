@@ -67,6 +67,9 @@ else
 	TXT_PADS=$(( $ART_PADS + $DIFF ))
 fi
 
+# padding top
+echo
+
 # print the ascii art
 printf "$ART_COLOR"
 while IFS= read -r line
@@ -89,4 +92,7 @@ done < $TXT_DIR
 
 # reset
 printf "\e[0m"
+
+# padding bottom
+echo
 
